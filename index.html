@@ -1,6 +1,4 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD HTML 4.01//EN"
-    "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
@@ -12,7 +10,7 @@
   <meta name="generator" content="Hugo 0.20.7" />
   <link rel="icon" type="image/png" href="./images/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500|Righteous" rel="stylesheet">
-  <link rel="stylesheet" href="./css/syndesis.css?5405a43">
+  <link rel="stylesheet" href="./css/syndesis.css" integrity="sha384-1znXe0eNsHuCDHjWboJkkm8W3vKAyVaCt&#43;MhMvYn8MFGK2e1XEh7Vlds2ya1aOuc" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   
@@ -84,19 +82,19 @@ ga('send', 'pageview');
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 push-md-6 mb-2">
         <div class="row feature-images">
           <div class="col col-md-12 pull-md-1 mb-md-2">
-            <img style="height: 3rem" src="images/twitter-logo.svg?5405a43" alt="Twitter"/>
+            <img style="height: 3rem" src="images/twitter-logo.svg" alt="Twitter"/>
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <img style="height: 3rem" src="images/facebook-logo.svg?5405a43" alt="Facebook"/>
+            <img style="height: 3rem" src="images/facebook-logo.svg" alt="Facebook"/>
           </div>
           <div class="col col-md-12 hidden-xs-down mb-md-2">
-            <img style="height: 3rem" src="images/linkedin-logo.svg?5405a43" alt="LinkedIn"/>
+            <img style="height: 3rem" src="images/linkedin-logo.svg" alt="LinkedIn"/>
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <img style="height: 3rem" src="images/github-logo.svg?5405a43" alt="GitHub"/>
+            <img style="height: 3rem" src="images/github-logo.svg" alt="GitHub"/>
           </div>
           <div class="col col-md-12 push-md-1 mb-md-2">
-            <img style="height: 3rem" src="images/google-logo.svg?5405a43" alt="Google"/>
+            <img style="height: 3rem" src="images/google-logo.svg" alt="Google"/>
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            <img style="height: 3rem" src="images/salesforce-logo.svg?5405a43" alt="Salesforce"/>
+            <img style="height: 3rem" src="images/salesforce-logo.svg" alt="Salesforce"/>
           </div>
         </div>
       </div>
@@ -117,7 +115,7 @@ ga('send', 'pageview');
   <div class="container">
     <div class="row align-items-center">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mb-2">
-        <img style="height: 10rem" src="images/screenshot-integration-list.png?5405a43" alt="Syndesis integration list"/>
+        <img class="screenshot" src="images/screenshot-integration-list.png" alt="Syndesis integration list"/>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <h4>
@@ -135,7 +133,7 @@ ga('send', 'pageview');
   <div class="container">
     <div class="row align-items-center">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 push-md-6 mb-2">
-        <img style="height: 10rem" src="images/screenshot-dashboard.png?5405a43" alt="Syndesis dashboard"/>
+        <img class="screenshot" src="images/screenshot-dashboard.png" alt="Syndesis dashboard"/>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pull-md-6">
         <h4>
@@ -153,8 +151,8 @@ ga('send', 'pageview');
   <div class="container">
     <div class="row align-items-center">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mb-2">
-        <img style="height: 10rem" src="images/openshift-logo.svg?5405a43" alt="OpenShift"/>
-        <img style="height: 8rem" src="images/kubernetes-logo.svg?5405a43" alt="Kubernetes"/>
+        <img style="height: 10rem" src="images/openshift-logo.svg" alt="OpenShift"/>
+        <img style="height: 8rem" src="images/kubernetes-logo.svg" alt="Kubernetes"/>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <h4>
@@ -167,157 +165,29 @@ ga('send', 'pageview');
     </div>
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.0.2/particles.min.js" integrity="sha384-4koXCs6rn5r6amGJpP4/zbycqdib5aLwfcr/H2QY4kPBjXVVH46zlmD9vPwNsTdG" crossorigin="anonymous"></script>
 <script>
-"use strict";
-
-var canvas = document.getElementById('particles'),
-  ctx = canvas.getContext('2d'),
-w = canvas.width = window.innerWidth,
-h = canvas.height = window.innerHeight,
-  points = [],
-  delay = 100,
-  amount = 100, 
-  speed = 30,
-  size = 4,
-  lineWidth = 2,
-  connectionDistance = 500,
-  randomSize = 0.5,
-  mouseX = 0,
-  mouseY = 0,
-  mouseRadius = 0,
-  bgColor = '#0088CE';
-
-window.addEventListener('resize', function(){
-w = canvas.width = window.innerWidth,
-h = canvas.height = window.innerHeight;
-
-ctx.fillStyle = 'hsl(190,40%,50%)';
-ctx.fillRect(0,0,w,h);
-}, false);
-
-function setup()
-{
-w = canvas.width = window.innerWidth,
-h = canvas.height = window.innerHeight;
-
-var screenDelta = Math.sqrt(w + h) / 100;
-var useAmount = amount * screenDelta;
-
-for (var i = 0; i < useAmount; i++) {
-  var x = (Math.random() * w);
-  var y = (Math.random() * h);
-  var xSpeed = (Math.random() * (speed / 10)) - (speed / 20);
-  var ySpeed = (Math.random() * (speed / 10)) - (speed / 20);
-  
-  points.push(new Point(x,y,xSpeed,ySpeed));
+window.onload = function() {
+    connectingDots(
+      "particles",
+      {
+          
+          delay:              100,
+          
+          amount:             100,
+          
+          speed:              30,
+          
+          size:               4,
+          
+          lineWidth:          2,
+          
+          distance:           550,
+          
+          randomSize:         0.5,
+          
+          bgColor:           'rgba(0,136,206,0.9)' 
+      })
 }
-
-ctx.fillStyle = 'hsl(190,40%,50%)';
-ctx.fillRect(0,0,w,h);
-
-draw();
-}
-
-function draw()
-{
-ctx.globalCompositeOperation = "source-over";
- 
-ctx.fillStyle = bgColor;
-ctx.fillRect(0,0,w,h);
-
-ctx.lineWidth = lineWidth;
-ctx.fillStyle = 'hsl(190,55%,54%)';
-
-var screenDelta = Math.sqrt(w + h) / 100;
-var useDistance = connectionDistance * screenDelta;
-
-ctx.globalCompositeOperation = "lighter";
- 
-points.each(function(point){
-  points.each(function(connection){
-    var distanceX = Math.pow((connection.x - point.x), 2);
-    var distanceY = Math.pow((connection.y - point.y), 2);
-    var distance = Math.sqrt(distanceX + distanceY);
-    
-    if (distance <= useDistance) {
-      var alpha = 1.0 - (distance / useDistance);
-      
-      ctx.strokeStyle = 'hsla(190,65%,10%, '+alpha+')';
-
-      ctx.beginPath();
-      ctx.moveTo(point.x,point.y);
-      ctx.lineTo(connection.x,connection.y);
-      ctx.stroke();
-      ctx.closePath();
-    }
-  });
-});
-
-ctx.globalCompositeOperation = "source-over";
- 
-points.each(function(point){
-  point.draw();
-});
-
-setTimeout(function() {
-     window.requestAnimationFrame(draw);
-},delay)
-}
-
-var Point = function (_x, _y, _xSpeed, _ySpeed) {
-this.x = _x;
-this.y = _y;
-this.xSpeed = _xSpeed;
-this.ySpeed = _ySpeed;
-
-var _this = this;
-
-this.draw = function() {
-  var xNoise = ((Math.random() * randomSize) -randomSize/2);
-  var yNoise = ((Math.random() * randomSize) -randomSize/2);
-  
-  _this.x += _this.xSpeed + xNoise;
-  _this.y += _this.ySpeed + yNoise;
-  
-  if (_this.x < size || _this.x > (w - size)) {
-    _this.xSpeed = -_this.xSpeed;
-  }
-  
-  if (_this.y < size || _this.y > (h - size)) {
-    _this.ySpeed = -_this.ySpeed;
-  }
-  
-  if (_this.x < 0) {
-    _this.x = 2;
-  }
-  
-  if (_this.x > w) {
-    _this.x = w - 2;
-  }
-  
-  if (_this.y < 0) {
-    _this.y = 2;
-  }
-  
-  if (_this.y > h) {
-    _this.y = h - 2;
-  }
-  
-  ctx.beginPath();
-  ctx.arc(_this.x,_this.y,size,0,2*Math.PI);
-  ctx.fill();
-  ctx.closePath();
-};
-};
-
-
-Array.prototype.each = function(a) {
-var l = this.length;
-for(var i=0;i<l;i++)a(this[i],i)
-};
-
-setTimeout(setup, 100);
 </script>
 <footer class="page-footer text-center container-fluid">
   <div class="row">
@@ -352,7 +222,7 @@ setTimeout(setup, 100);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="./js/syndesis.js?5405a43" crossorigin="anonymous"></script>
+<script src="./js/syndesis.js" integrity="sha384-Xc/HlSo12Z071Cs7Sehf4tq6/GtcdNRIyk6tLfooaTandpHTTeohX0mutVl&#43;H/bq" crossorigin="anonymous"></script>
 </body>
 
 </html>
